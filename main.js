@@ -22,60 +22,60 @@ function render(breweries) {
 
         cardBreweries.classList.add('card-brewerie')
 
-        const nameCard = document.createElement('span')
+        const nameCard = document.createElement('strong')
         const breweryTypeCard = document.createElement('span')
-        const addressCard = document.createElement('span')
-        const stateProvinceCard = document.createElement('span')
-        const postalCodeCard = document.createElement('span')
-        const countryCard = document.createElement('span')
-        const phoneCard = document.createElement('span')
-        const webSiteUrlCard = document.createElement('span')
+        // const addressCard = document.createElement('span')
+        // const stateProvinceCard = document.createElement('span')
+        // const postalCodeCard = document.createElement('span')
+        // const countryCard = document.createElement('span')
+        // const phoneCard = document.createElement('span')
+        // const webSiteUrlCard = document.createElement('span')
         const stateCard = document.createElement('span')
-        const streetCard = document.createElement('span')
+        // const streetCard = document.createElement('span')
 
 
         const nodeName = document.createTextNode('Name: ' + brewerie.name + '\n')
         const nodeBreweryType = document.createTextNode('Type: ' + brewerie.brewery_type + '\n')
-        const nodeAddress = document.createTextNode('Address: ' + brewerie.address_1 + '\n')
-        const nodeStateProvince = document.createTextNode('Province: ' + brewerie.state_province + '\n')
-        const nodePostalCode = document.createTextNode('Postal Code: ' + brewerie.postal_code + '\n')
-        const nodeCountry = document.createTextNode('Country: ' + brewerie.country + '\n')
-        const nodePhone = document.createTextNode('Phone: ' + brewerie.phone + '\n')
-        const nodeWebSiteUrl = document.createTextNode('Web Site: ' + brewerie.website_url + '\n')
+        // const nodeAddress = document.createTextNode('Address: ' + brewerie.address_1 + '\n')
+        // const nodeStateProvince = document.createTextNode('Province: ' + brewerie.state_province + '\n')
+        // const nodePostalCode = document.createTextNode('Postal Code: ' + brewerie.postal_code + '\n')
+        // const nodeCountry = document.createTextNode('Country: ' + brewerie.country + '\n')
+        // const nodePhone = document.createTextNode('Phone: ' + brewerie.phone + '\n')
+        // const nodeWebSiteUrl = document.createTextNode('Web Site: ' + brewerie.website_url + '\n')
         const nodeState = document.createTextNode('State: ' + brewerie.state + '\n')
-        const nodeStreet = document.createTextNode('Street: ' + brewerie.street)
+        // const nodeStreet = document.createTextNode('Street: ' + brewerie.street)
 
 
         nameCard.appendChild(nodeName)
         breweryTypeCard.appendChild(nodeBreweryType)
-        addressCard.appendChild(nodeAddress)
-        stateProvinceCard.appendChild(nodeStateProvince)
-        postalCodeCard.appendChild(nodePostalCode)
-        countryCard.appendChild(nodeCountry)
-        phoneCard.appendChild(nodePhone)
-        webSiteUrlCard.appendChild(nodeWebSiteUrl)
+        // addressCard.appendChild(nodeAddress)
+        // stateProvinceCard.appendChild(nodeStateProvince)
+        // postalCodeCard.appendChild(nodePostalCode)
+        // countryCard.appendChild(nodeCountry)
+        // phoneCard.appendChild(nodePhone)
+        // webSiteUrlCard.appendChild(nodeWebSiteUrl)
         stateCard.appendChild(nodeState)
-        streetCard.appendChild(nodeStreet)
+        // streetCard.appendChild(nodeStreet)
 
 
 
         cardBreweries.appendChild(nameCard)
         cardBreweries.appendChild(breweryTypeCard)
-        cardBreweries.appendChild(addressCard)
-        cardBreweries.appendChild(stateProvinceCard)
-        cardBreweries.appendChild(postalCodeCard)
-        cardBreweries.appendChild(countryCard)
-        cardBreweries.appendChild(phoneCard)
-        cardBreweries.appendChild(webSiteUrlCard)
+        // cardBreweries.appendChild(addressCard)
+        // cardBreweries.appendChild(stateProvinceCard)
+        // cardBreweries.appendChild(postalCodeCard)
+        // cardBreweries.appendChild(countryCard)
+        // cardBreweries.appendChild(phoneCard)
+        // cardBreweries.appendChild(webSiteUrlCard)
         cardBreweries.appendChild(stateCard)
-        cardBreweries.appendChild(streetCard)
+        // cardBreweries.appendChild(streetCard)
 
         mainContainer.appendChild(cardBreweries)
 
         const detailBtn = document.createElement('button')
         const detailBtnNode = document.createTextNode('Dettagli')
-detailBtn.appendChild(detailBtnNode)
-        
+        detailBtn.appendChild(detailBtnNode)
+
 
 
         detailBtn.addEventListener('click', () => {
@@ -85,8 +85,8 @@ detailBtn.appendChild(detailBtnNode)
 
 
         )
-cardBreweries.appendChild(detailBtn)
-        
+        cardBreweries.appendChild(detailBtn)
+
 
 
 
@@ -101,18 +101,26 @@ cardBreweries.appendChild(detailBtn)
 
 
 
-let pageNumber = 1;
+let pageNumber = 1
 
 
 function previous() {
-    pageNumber--;
+    
+  
+    if (pageNumber === 0) {
+
+      return pageNumber[1]
+    } 
+   pageNumber--;
     DBService.getBreweries(pageNumber)
-        .then(brewery => render(brewery))
-}
+      .then((brewery) => render(brewery));
 
-
+    
+  }
 
 function next() {
+
+    
     pageNumber++;
     DBService.getBreweries(pageNumber)
         .then(brewery => render(brewery))

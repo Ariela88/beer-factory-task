@@ -3,7 +3,7 @@ class DBService {
 
     static getBreweries(pageNumber) {
 
-        const url = 'https://api.openbrewerydb.org/v1/breweries?per_page=10&page=' + pageNumber;
+        const url = 'https://api.openbrewerydb.org/v1/breweries?per_page=12&page=' + pageNumber;
 
 
 
