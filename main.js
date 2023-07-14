@@ -6,7 +6,7 @@ DBService.getBreweries().then(breweries => render(breweries))
 function render(breweries) {
 
     for (const brewery of breweries) {
-        console.log(brewery.name)
+        // console.log(brewery.name)
 
     }
 
@@ -90,7 +90,7 @@ function render(breweries) {
 
 
 
-        console.log(cardBreweries)
+        // console.log(cardBreweries)
     }
 }
 
@@ -109,6 +109,7 @@ function previous() {
   
     if (pageNumber === 0) {
 
+        alert('non ci sono pagine prima di questa!')
       return pageNumber[1]
     } 
    pageNumber--;
