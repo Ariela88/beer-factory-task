@@ -34,15 +34,15 @@ function render(breweries) {
         // const streetCard = document.createElement('span')
 
 
-        const nodeName = document.createTextNode('Nome: ' + '\n'+ brewerie.name )
-        const nodeBreweryType = document.createTextNode('Tipo: ' + '\n' + brewerie.brewery_type)
+        const nodeName = document.createTextNode(brewerie.name )
+        const nodeBreweryType = document.createTextNode(brewerie.brewery_type)
         // const nodeAddress = document.createTextNode('Address: ' + brewerie.address_1 + '\n')
         // const nodeStateProvince = document.createTextNode('Province: ' + brewerie.state_province + '\n')
         // const nodePostalCode = document.createTextNode('Postal Code: ' + brewerie.postal_code + '\n')
         // const nodeCountry = document.createTextNode('Country: ' + brewerie.country + '\n')
         // const nodePhone = document.createTextNode('Phone: ' + brewerie.phone + '\n')
         // const nodeWebSiteUrl = document.createTextNode('Web Site: ' + brewerie.website_url + '\n')
-        const nodeState = document.createTextNode('Stato: '+ '\n' + brewerie.state )
+        const nodeState = document.createTextNode(brewerie.state )
         // const nodeStreet = document.createTextNode('Street: ' + brewerie.street)
 
 
