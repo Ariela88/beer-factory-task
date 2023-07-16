@@ -402,7 +402,7 @@ h1{
     background-color: white;
     border: 2px solid black;
     width: 30%;
-    color: #464646;
+    color: #000000;
     height: 24px;
     border-radius: 10px;
     margin: 0;
@@ -431,6 +431,7 @@ h1{
     font-size: 24px;
     margin: 0;
     padding: 0px;
+    text-align: center;
    
     
     align-items: center;
@@ -463,6 +464,7 @@ h1{
     width: 80px;
     text-decoration: none;
     margin-left: 20px;
+    color: #000000;
     
     border-radius: 10px;
 
