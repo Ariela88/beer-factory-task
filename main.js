@@ -23,7 +23,7 @@ function render(breweries) {
         cardBreweries.classList.add('card-brewerie')
 
         const nameCard = document.createElement('strong')
-        const breweryTypeCard = document.createElement('span')
+        // const breweryTypeCard = document.createElement('span')
         // const addressCard = document.createElement('span')
         // const stateProvinceCard = document.createElement('span')
         // const postalCodeCard = document.createElement('span')
@@ -35,7 +35,7 @@ function render(breweries) {
 
 
         const nodeName = document.createTextNode(brewerie.name )
-        const nodeBreweryType = document.createTextNode(brewerie.brewery_type)
+        // const nodeBreweryType = document.createTextNode(brewerie.brewery_type)
         // const nodeAddress = document.createTextNode('Address: ' + brewerie.address_1 + '\n')
         // const nodeStateProvince = document.createTextNode('Province: ' + brewerie.state_province + '\n')
         // const nodePostalCode = document.createTextNode('Postal Code: ' + brewerie.postal_code + '\n')
@@ -47,7 +47,7 @@ function render(breweries) {
 
 
         nameCard.appendChild(nodeName)
-        breweryTypeCard.appendChild(nodeBreweryType)
+        // breweryTypeCard.appendChild(nodeBreweryType)
         // addressCard.appendChild(nodeAddress)
         // stateProvinceCard.appendChild(nodeStateProvince)
         // postalCodeCard.appendChild(nodePostalCode)
@@ -60,7 +60,7 @@ function render(breweries) {
 
 
         cardBreweries.appendChild(nameCard)
-        cardBreweries.appendChild(breweryTypeCard)
+        // cardBreweries.appendChild(breweryTypeCard)
         // cardBreweries.appendChild(addressCard)
         // cardBreweries.appendChild(stateProvinceCard)
         // cardBreweries.appendChild(postalCodeCard)
@@ -107,7 +107,7 @@ let pageNumber = 1
 function previous() {
     
   
-    if (pageNumber === 0) {
+    if (pageNumber === 1) {
 
         alert('non ci sono pagine prima di questa!')
       return pageNumber[1]
@@ -138,5 +138,24 @@ function getDetailsBrewery(id) {
 
 
 }
+
+let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
+} 
 
 
