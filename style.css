@@ -7,58 +7,56 @@ body {
     background-color: #000000;
     background-image: url(./assetts/beerBootle.jpg  );
     width: 100vw;
-    margin: 0;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:0;
 
 }
 
 
 header {
 
+    position: sticky;
+    top: 0;
 
-    background-size: 100%;
+    background-color: #000000da;
 
     display: flex;
-flex-direction: column;
-    width: 100vw;
-
-    
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 24px;
     text-align: center;
 
 
-   
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
 .h4-span {
     font-family: 'Lumanosimo', cursive;
-    font-size: 44px;
+    font-size: 36px;
     /* text-shadow: -2px 0 #ffffff, 0 2px #ffffff, 2px 0 #ffffff, 0 -2px #ffffff; */
-align-self: flex-start;
+    align-self: flex-start;
     color: #cfa500;
-   margin: 0;
+    margin: 0;
 }
 
-h4{
-    font-family: 'Lumanosimo', cursive;
-    font-size: 44px;
-    /* text-shadow: -2px 0 #ffffff, 0 2px #ffffff, 2px 0 #ffffff, 0 -2px #ffffff; */
-width: 100%;
-justify-self: center;
-    color: #000000;
-   margin-top: -90px;
 
-}
 
 h1 {
 
 
     font-family: 'Lumanosimo', cursive;
-    font-size: 120px;
+    font-size: 80px;
     /* text-shadow: -2px 0 #ffffff, 0 2px #ffffff, 2px 0 #ffffff, 0 -2px #ffffff; */
     color: #ffffff;
     text-align: center;
     width: 100vw;
+    padding: 0;
+    margin: 0;
 
 
 
@@ -72,7 +70,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 150px;
-   
+
     align-items: center;
 }
 
@@ -126,10 +124,10 @@ h1 {
     flex-wrap: wrap;
     font-family: 'Nunito Sans', sans-serif;
     text-align: center;
-    width: 20%;
-    margin: auto;
+    width: 16%;
+    margin: 0;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 300px;
     gap: 30px;
@@ -148,14 +146,14 @@ h1 {
 .card-brewerie strong {
 
     font-size: 20px;
-    font-family: 'Lumanosimo', cursive;
+    
     background-color: #ffffff;
 
     height: 25%;
     margin-top: 0;
     padding-top: 20px;
     width: 98%;
-    border-top: 2px dotted black;
+    border-top: 2px dotted rgb(0, 0, 0);
 
 }
 
@@ -163,8 +161,8 @@ h1 {
 .card-brewerie span {
 
     font-size: 20px;
-    font-family: 'Lumanosimo', cursive;
-    color: #ffffff;
+    
+    color: #434343;
 }
 
 .card-brewerie button {
@@ -172,9 +170,11 @@ h1 {
     font-size: 16px;
     background-color: white;
     border: 2px solid black;
-    width: 100px;
-    margin-bottom: 20px;
-    font-family: 'Nunito Sans', sans-serif;
+    
+    color: #464646;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 12px;
 
 
 }
