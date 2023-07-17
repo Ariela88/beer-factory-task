@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Nunito+Sans:wght@400;700&family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body {
     box-sizing: border-box;
@@ -26,9 +27,7 @@ header {
 
     position: sticky;
     top: 0;
-
-    background-color: #000000da;
-
+    background-color: #232323ae;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -45,7 +44,7 @@ header {
 .h4-span {
     font-family: 'Lumanosimo', cursive;
     font-size: 3vw;
-    /* text-shadow: -2px 0 #ffffff, 0 2px #ffffff, 2px 0 #ffffff, 0 -2px #ffffff; */
+    text-shadow:none;
     align-self: flex-start;
     color: #cfa500;
     margin: 0;
@@ -56,9 +55,9 @@ header {
 h1 {
 
 
-    font-family: 'Lumanosimo', cursive;
+    font-family: 'Lobster', cursive;
     font-size: 6vw;
-    /* text-shadow: -2px 0 #ffffff, 0 2px #ffffff, 2px 0 #ffffff, 0 -2px #ffffff; */
+    text-shadow: -2px 0 rgb(255, 168, 54), 0 2px rgb(255, 168, 54), 2px 0 rgb(255, 168, 54), 0 -2px rgb(255, 168, 54);
     color: #ffffff;
     text-align: center;
     width: 100vw;
@@ -131,8 +130,8 @@ h1 {
     flex-wrap: wrap;
     font-family: 'Nunito Sans', sans-serif;
     text-align: center;
-    width: 20%;
-    margin: 0;
+    width: 16%;
+    margin: 32px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -141,7 +140,7 @@ h1 {
     /* border: 2px solid black;
     border-radius: 20px; */
     color: #000000;
-    border: 2px solid rgb(71, 71, 71);
+    /* border: 2px solid rgb(71, 71, 71); */
     border-radius: 0 0 20% 20%;
 
 
@@ -152,19 +151,19 @@ h1 {
 
 .card-brewerie strong {
 
-    font-size: 20px;
+    font-size: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ffffffc4;
-
+    font-family: 'Lobster',cursive;
+    
     height: 25%;
-    margin-top: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin:0;
+    padding: 20px 0px;
 
-    width: 98%;
-    border-top: 2px dotted rgb(0, 0, 0);
+    width: 100%;
+    /* border-top: 2px dotted rgb(0, 0, 0); */
 
 }
 
@@ -181,12 +180,13 @@ h1 {
 
     font-size: 16px;
     background-color: white;
-    border: 2px solid black;
-    width: 60%;
+    /* border: 2px solid black; */
+    width: 50%;
     color: #464646;
     height: 30px;
     border-radius: 10px;
     margin-bottom: 12px;
+    border: none;
 
 
 }
@@ -236,10 +236,14 @@ h1 {
 
 }
 
+h2 {
+    padding: 0;
+    margin: 0;
+}
 
 
 #details-wrapper {
-    background-color: rgba(255, 255, 255, 0.502);
+    background-color: rgba(220, 220, 220, 0.798);
     display: flex;
     flex-wrap: wrap;
     font-family: 'Nunito Sans', sans-serif;
@@ -260,6 +264,8 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 .details-header {
     position: sticky;
@@ -332,6 +338,64 @@ main a {
     background-color: #ffffffa5;
     font-family: 'Nunito Sans', sans-serif;
 }
+
+footer{
+	border-top: 1px solid #C99D66; /* primary-color */
+	text-align:center;
+	padding:30px 10px;
+	line-height: 1.6em;
+	font-size:0.8em;
+	background-color: rgb(29, 29, 29);/* primary color*/
+	color: #fff;
+}
+
+footer a{
+	color:rgb(255, 168, 54); /* secondary-color*/
+}
+
+footer a:hover{
+	color:rgb(255, 168, 54); /* light seconday color*/	
+}
+
+footer .credits {
+	max-width:300px;
+	margin:auto;
+}
+
+footer .credits a img{
+  -o-transition: opacity .2 ease-in;
+  -ms-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -webkit-transition: opacity .2s ease-in;
+  transition: opacity .2s ease
+}
+
+
+
+footer .social-cont .social-list {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+footer .social-cont .social-list > li {
+	margin: 8px 8px 8px 0;
+	display: inline-block;
+	vertical-align: top;
+	height: 32px;
+	width: 32px;
+	border-radius: 6em;
+	background-color:rgb(255, 168, 54); /* secondary-color*/
+}
+
+footer .social-cont .social-list li img {
+	width: 32px
+}
+
+footer .social-cont .social-list > li:hover {
+background:rgb(255, 168, 54); /* light seconday color*/		
+}
+	
 
 
 @media (max-width: 500px) {

@@ -1,10 +1,10 @@
 const brewerieString = sessionStorage.getItem('brewerie');
+
 const detailContainer = document.getElementById('details-wrapper');
 
-    const brewerie = JSON.parse(brewerieString);
+const brewerie = JSON.parse(brewerieString);
     
-    detailContainer.innerHTML = `<h2>${brewerie.name}</h2> <br>
-                                 
+detailContainer.innerHTML = `<h2>${brewerie.name}</h2> <br>
                                  <span> Nome Azienda: ${brewerie.name}</span><br>
                                  <span> Tipo Azienda: ${brewerie.brewery_type}</span><br>
                                  <span> Indirizzo: ${brewerie.address_1}</span><br>
