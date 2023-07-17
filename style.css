@@ -7,18 +7,19 @@ body {
     background-color: #000000;
     background-image: url(./assetts/verybig-beer.jpg );
     width: 100vw;
-    background-size: cover ;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin:0;
+    margin: 0;
 
 }
+
 a {
     text-decoration: none;
 }
 
-button{
-    cursor: pointer; 
+button {
+    cursor: pointer;
 }
 
 header {
@@ -161,7 +162,7 @@ h1 {
     margin-top: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    
+
     width: 98%;
     border-top: 2px dotted rgb(0, 0, 0);
 
@@ -171,7 +172,7 @@ h1 {
 .card-brewerie span {
 
     font-size: 24px;
-    
+
     color: #020202;
     font-weight: 500;
 }
@@ -220,18 +221,20 @@ h1 {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: rgb(254, 254, 254); /* Set a background color */
-    color: rgb(76, 76, 76); /* Text color */
-    cursor: pointer; 
+    background-color: rgb(254, 254, 254);
+    /* Set a background color */
+    color: rgb(76, 76, 76);
+    /* Text color */
+    cursor: pointer;
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
-  }
-  
-  #myBtn:hover {
+}
+
+#myBtn:hover {
     background-color: rgb(255, 168, 54);
 
-  }
+}
 
 
 
@@ -261,20 +264,14 @@ h1 {
 .details-header {
     position: sticky;
     top: 0;
-
     background-color: #000000da;
-gap: -20px;
+    gap: -20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0;
-    
-    
-
-
-
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -292,7 +289,6 @@ gap: -20px;
     border: 2px solid black;
     width: 200px;
     text-decoration: none;
-    
     border-radius: 10px;
 
 
@@ -322,7 +318,7 @@ main a {
 :active.homepage-btn {
     background-color: rgb(0, 0, 0);
     color: white;
-   
+
 
 }
 
@@ -338,138 +334,145 @@ main a {
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
 
 
-    body{
+    body {
 
         background-image: url(./assetts/beerBootle.jpg);
-       
+
     }
 
-    
-.card-brewerie {
 
-width: 80%;
-    
-}
+    .card-brewerie {
 
+        width: 80%;
 
-header {
-    position: fixed;
-    top:0;
-    padding: 12px 4px;
-  
-    left: 0;
-}
-
-h1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    text-align: center;
-    padding: 0;
-    font-size: 36px;
-}
-
-.h4-span{
-    align-self: center;
-    font-size: 16px;
-}
-.spacer{
-    height: 120px;
-}
-
-.headerBtn {
-    display: flex;
-    gap:10px;
-    margin-top: 8px;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-
-    
-
-  
-}
+    }
 
 
-.headerBtn button {
+    header {
+        position: fixed;
+        top: 0;
+        padding: 12px 4px;
 
-    font-size: 20px;
-    background-color: white;
-    border: 2px solid black;
-    width: 30%;
-    color: #000000;
-    height: 24px;
-    border-radius: 10px;
-    margin: 0;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+        left: 0;
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        font-size: 36px;
+    }
+
+    .h4-span {
+        align-self: center;
+        font-size: 16px;
+    }
+
+    .spacer {
+        height: 120px;
+    }
+
+    .headerBtn {
+        display: flex;
+        gap: 10px;
+        margin-top: 8px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
 
 
 
 
-
-}
-
-.details-header{
-    height: 100px;
-}
-
-#details-wrapper {
-    background-color: rgba(255, 255, 255, 0.502);
-    display: flex;
-    flex-wrap: column;
-    font-family: 'Nunito Sans', sans-serif;
-
-    font-size: 24px;
-    margin: 0;
-    padding: 0px;
-    text-align: center;
-   
-    
-    align-items: center;
-  height: auto;
-    justify-content: center;
-
-}
-.h1-dtl{
-    font-size: 6vw;
-}
-
-#details-wrapper iframe{
-    width: auto;
-}
-
-.paragraph-dtls{
-    text-align: justify;
-}
-
-.details-main{
-    margin-bottom: 10px;
-    
-}
-
-.homepage-btn {
-
-    font-size: 24px;
-    background-color: white;
-    border: 2px solid black;
-    width: 80px;
-    text-decoration: none;
-    margin-left: 20px;
-    color: #000000;
-    
-    border-radius: 10px;
+    }
 
 
-}
+    .headerBtn button {
+
+        font-size: 20px;
+        background-color: white;
+        border: 2px solid black;
+        width: 30%;
+        color: #000000;
+        height: 24px;
+        border-radius: 10px;
+        margin: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+
+
+
+    }
+
+    .details-header {
+        height: 100px;
+    }
+
+    #details-wrapper {
+        background-color: rgba(255, 255, 255, 0.502);
+        display: flex;
+        flex-wrap: column;
+        font-family: 'Nunito Sans', sans-serif;
+
+        font-size: 24px;
+        margin: 0px;
+        padding: 20px;
+        text-align: center;
+
+
+        align-items: center;
+        height: auto;
+        justify-content: center;
+
+    }
+
+    #details-wrapper span {
+
+        margin-bottom: 16px;
+    }
+
+    .h1-dtl {
+        font-size: 6vw;
+    }
+
+    #details-wrapper iframe {
+        width: auto;
+    }
+
+    .paragraph-dtls {
+        text-align: justify;
+    }
+
+    .details-main {
+        margin-bottom: 10px;
+
+    }
+
+    .homepage-btn {
+
+        font-size: 24px;
+        background-color: white;
+        border: 2px solid black;
+        width: 80px;
+        text-decoration: none;
+        margin-left: 20px;
+        color: #000000;
+
+        border-radius: 10px;
+
+
+    }
 
 
 

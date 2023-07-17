@@ -5,10 +5,10 @@ DBService.getBreweries().then(breweries => render(breweries))
 
 function render(breweries) {
 
-    for (const brewery of breweries) {
-        // console.log(brewery.name)
+    // for (const brewery of breweries) {
+       
 
-    }
+    // }
 
     const mainContainer = document.getElementById('main-container');
 
@@ -101,6 +101,8 @@ function render(breweries) {
 
 
 
+
+
 let pageNumber = 1
 
 
@@ -157,5 +159,9 @@ function topFunction() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0;
 } 
+
+
+
+
 
 

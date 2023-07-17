@@ -5,7 +5,7 @@ const detailContainer = document.getElementById('details-wrapper');
     
     detailContainer.innerHTML = `<h2>${brewerie.name}</h2> <br>
                                  
-                                 <span> Nome Azienda: ${brewerie.brewery_type}</span><br>
+                                 <span> Nome Azienda: ${brewerie.name}</span><br>
                                  <span> Tipo Azienda: ${brewerie.brewery_type}</span><br>
                                  <span> Indirizzo: ${brewerie.address_1}</span><br>
                                  <span> ${brewerie.address_2 === null? "" : brewerie.address_2}</span><br>
