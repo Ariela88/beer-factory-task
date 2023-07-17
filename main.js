@@ -39,8 +39,8 @@ function render(breweries) {
 
 
     detailBtn.addEventListener('click', () => {
-      sessionStorage.setItem('brewerie', JSON.stringify(brewerie));
-      window.location.href = './details.html';
+      // sessionStorage.setItem('brewerie', JSON.stringify(brewerie));
+      window.location = './details.html?id=' + brewerie.id;
     }
 
 
@@ -81,14 +81,7 @@ function next() {
 
 
 
-function getDetailsBrewery(id) {
 
-  const url = 'https://api.openbrewerydb.org/v1/breweries?per_id=' + brewery.id;
-
-
-
-
-}
 
 let mybutton = document.getElementById("myBtn");
 

@@ -14,6 +14,17 @@ class DBService {
 
     }
 
+    static getSingleBrewery(id) {
+     
+
+        const url = 'https://api.openbrewerydb.org/v1/breweries/' + id;
+        return fetch(url).then(resp=>resp.json())
+      
+      
+      
+      
+      }
+
     
 
 
